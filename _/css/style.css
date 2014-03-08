@@ -1,0 +1,382 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Oswald:400,300);
+/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 1, ../components/scss/_global.scss */
+body {
+  background: #cfdcd3;
+  font-size: 16px;
+  font-family: "Droid Serif", serif; }
+  /* line 5, ../components/scss/_global.scss */
+  body a {
+    font-family: "Oswald", sans-serif;
+    color: #27777e;
+    text-decoration: none;
+    font-weight: 300; }
+    /* line 10, ../components/scss/_global.scss */
+    body a:hover {
+      color: #1b5771;
+      text-decoration: underline; }
+  /* line 16, ../components/scss/_global.scss */
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-weight: 700;
+    font-family: "Oswald", sans-serif; }
+  /* line 20, ../components/scss/_global.scss */
+  body h1 {
+    font-size: 3.16em; }
+  /* line 24, ../components/scss/_global.scss */
+  body h2 {
+    font-size: 2.37em; }
+  /* line 28, ../components/scss/_global.scss */
+  body h3 {
+    font-size: 1.78em; }
+  /* line 32, ../components/scss/_global.scss */
+  body h4, body h5, body h6 {
+    font-size: 1.33em; }
+  /* line 36, ../components/scss/_global.scss */
+  body p {
+    font-size: 1em;
+    padding: 1em; }
+
+/* line 2, ../components/scss/_layout.scss */
+body header {
+  background: #f4eee2; }
+  /* line 4, ../components/scss/_layout.scss */
+  body header h1#site-title {
+    color: #1b5771;
+    text-align: center;
+    line-height: 2; }
+  /* line 9, ../components/scss/_layout.scss */
+  body header h2#site-sub-title {
+    font-size: 1.33em;
+    text-align: center;
+    line-height: 1.5;
+    color: #b2c6b8; }
+/* line 16, ../components/scss/_layout.scss */
+body nav#main-nav {
+  background: #8cb9b2;
+  padding: 1em 0; }
+  /* line 19, ../components/scss/_layout.scss */
+  body nav#main-nav ul {
+    list-style: none;
+    text-align: center; }
+    /* line 22, ../components/scss/_layout.scss */
+    body nav#main-nav ul li {
+      display: inline-block; }
+      /* line 2, ../components/scss/_mixins.scss */
+      body nav#main-nav ul li {
+        margin-right: 8px; }
+      /* line 6, ../components/scss/_mixins.scss */
+      body nav#main-nav ul li:last-of-type {
+        margin-right: 0; }
+      /* line 25, ../components/scss/_layout.scss */
+      body nav#main-nav ul li a {
+        color: #416b64;
+        font-size: 1.33em; }
+/* line 32, ../components/scss/_layout.scss */
+body section#main-content {
+  padding-top: 2em; }
+  /* line 34, ../components/scss/_layout.scss */
+  body section#main-content article {
+    background: #c6d6cb; }
+    /* line 12, ../components/scss/_mixins.scss */
+    body section#main-content article {
+      margin-bottom: 1em; }
+    /* line 16, ../components/scss/_mixins.scss */
+    body section#main-content article:last-of-type {
+      margin-bottom: 0; }
+  /* line 39, ../components/scss/_layout.scss */
+  body section#main-content article.feature-article h3.article-title, body section#main-content article.home-article h3.article-title {
+    text-align: center;
+    line-height: 2; }
+    /* line 42, ../components/scss/_layout.scss */
+    body section#main-content article.feature-article h3.article-title a, body section#main-content article.home-article h3.article-title a {
+      color: #27777e;
+      font-weight: 700; }
+  /* line 47, ../components/scss/_layout.scss */
+  body section#main-content article.feature-article .article-meta, body section#main-content article.home-article .article-meta {
+    width: 23%;
+    padding: 1em 1%; }
+    /* line 50, ../components/scss/_layout.scss */
+    body section#main-content article.feature-article .article-meta h4, body section#main-content article.home-article .article-meta h4 {
+      font-size: 1em;
+      font-weight: 400;
+      color: #1b5771; }
+  /* line 56, ../components/scss/_layout.scss */
+  body section#main-content article.feature-article p, body section#main-content article.home-article p {
+    width: 73%;
+    padding: 1em 1%;
+    font-size: 0.9em;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #496351; }
+    /* line 63, ../components/scss/_layout.scss */
+    body section#main-content article.feature-article p a, body section#main-content article.home-article p a {
+      font-family: "Droid Serif", serif; }
+/* line 69, ../components/scss/_layout.scss */
+body aside#main-side-bar {
+  margin-top: 1em; }
+  /* line 71, ../components/scss/_layout.scss */
+  body aside#main-side-bar section.widget {
+    background: #c6d6cb; }
+    /* line 12, ../components/scss/_mixins.scss */
+    body aside#main-side-bar section.widget {
+      margin-bottom: 1em; }
+    /* line 16, ../components/scss/_mixins.scss */
+    body aside#main-side-bar section.widget:last-of-type {
+      margin-bottom: 0; }
+    /* line 74, ../components/scss/_layout.scss */
+    body aside#main-side-bar section.widget h3.widget-title {
+      text-align: center;
+      font-weight: 700;
+      line-height: 2;
+      color: #27777e; }
+    /* line 80, ../components/scss/_layout.scss */
+    body aside#main-side-bar section.widget .widget-body {
+      padding: 1em; }
+      /* line 12, ../components/scss/_mixins.scss */
+      body aside#main-side-bar section.widget .widget-body ul li {
+        margin-bottom: 5px; }
+      /* line 16, ../components/scss/_mixins.scss */
+      body aside#main-side-bar section.widget .widget-body ul li:last-of-type {
+        margin-bottom: 0; }
+/* line 90, ../components/scss/_layout.scss */
+body footer {
+  background: #1b5771;
+  margin: 1em 0; }
+  /* line 93, ../components/scss/_layout.scss */
+  body footer h2#copy-right {
+    font-size: 1.78em;
+    text-align: center;
+    line-height: 2;
+    color: #79c0df;
+    font-weight: 300; }
+
+/* line 105, ../components/scss/_layout.scss */
+body {
+  *zoom: 1;
+  max-width: 480px;
+  _width: 480px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 38, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  body:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 107, ../components/scss/_layout.scss */
+  body header {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: 0px;
+    display: inline; }
+  /* line 110, ../components/scss/_layout.scss */
+  body nav {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: 0px;
+    display: inline;
+    float: right;
+    margin-right: 0;
+    *margin-left: 0px;
+    display: inline; }
+  /* line 114, ../components/scss/_layout.scss */
+  body section#main-content {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: 0px;
+    display: inline; }
+    /* line 116, ../components/scss/_layout.scss */
+    body section#main-content article {
+      *zoom: 1;
+      max-width: 480px;
+      _width: 480px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: auto;
+      margin-right: auto; }
+      /* line 117, ../components/scss/_layout.scss */
+      body section#main-content article h3.article-title {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+        *margin-left: 0px;
+        display: inline; }
+      /* line 38, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+      body section#main-content article:after {
+        content: "";
+        display: table;
+        clear: both; }
+      /* line 121, ../components/scss/_layout.scss */
+      body section#main-content article .article-meta {
+        width: 25%;
+        float: left;
+        margin-right: 0%;
+        display: inline; }
+      /* line 124, ../components/scss/_layout.scss */
+      body section#main-content article p {
+        width: 75%;
+        float: right;
+        margin-right: 0;
+        *margin-left: 0px;
+        display: inline; }
+  /* line 129, ../components/scss/_layout.scss */
+  body aside#main-side-bar {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: 0px;
+    display: inline; }
+  /* line 132, ../components/scss/_layout.scss */
+  body footer {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: 0px;
+    display: inline; }
+
+@media (min-width: 480px) and (max-width: 959px) {
+  /* line 138, ../components/scss/_layout.scss */
+  body {
+    max-width: 960px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 38, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    body:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 140, ../components/scss/_layout.scss */
+    body header {
+      width: 100%;
+      float: right;
+      margin-right: 0; }
+    /* line 143, ../components/scss/_layout.scss */
+    body nav {
+      width: 100%;
+      float: right;
+      margin-right: 0; }
+    /* line 146, ../components/scss/_layout.scss */
+    body section#main-content {
+      margin-left: 6.25%;
+      width: 56.25%;
+      float: left;
+      margin-right: 0%;
+      padding-top: 1em; }
+      /* line 150, ../components/scss/_layout.scss */
+      body section#main-content article {
+        max-width: 960px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: auto;
+        margin-right: auto; }
+        /* line 151, ../components/scss/_layout.scss */
+        body section#main-content article h3.article-title {
+          width: 100%;
+          float: left;
+          margin-right: 0%; }
+        /* line 38, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+        body section#main-content article:after {
+          content: "";
+          display: table;
+          clear: both; }
+        /* line 155, ../components/scss/_layout.scss */
+        body section#main-content article .article-meta {
+          width: 100%;
+          float: left;
+          margin-right: 0%;
+          width: 100% !important;
+          padding: 0 3% !important; }
+          /* line 38, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+          body section#main-content article .article-meta:after {
+            content: "";
+            display: table;
+            clear: both; }
+          /* line 160, ../components/scss/_layout.scss */
+          body section#main-content article .article-meta h4 {
+            float: left; }
+            /* line 2, ../components/scss/_mixins.scss */
+            body section#main-content article .article-meta h4 {
+              margin-right: 10px; }
+            /* line 6, ../components/scss/_mixins.scss */
+            body section#main-content article .article-meta h4:last-of-type {
+              margin-right: 0; }
+        /* line 165, ../components/scss/_layout.scss */
+        body section#main-content article p {
+          width: 100%;
+          float: left;
+          margin-right: 0%;
+          width: 94% !important;
+          padding: 3% !important; }
+    /* line 173, ../components/scss/_layout.scss */
+    body aside#main-side-bar {
+      margin-left: 6.25%;
+      width: 25%;
+      float: left;
+      margin-right: 0%;
+      margin-right: 6.25%; }
+    /* line 178, ../components/scss/_layout.scss */
+    body footer {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }

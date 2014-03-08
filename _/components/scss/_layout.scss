@@ -1,0 +1,182 @@
+body {
+	header {
+		background: $white;
+		h1#site-title {
+			color: $blue;
+			text-align: center;
+			line-height: 2;
+		}
+		h2#site-sub-title {
+			font-size: $m;
+			text-align: center;
+			line-height: 1.5;
+			color: darken($pale, 10%);
+		}
+	}
+	nav#main-nav {
+		background: $lightblue;
+		padding: 1em 0;
+		ul {
+			list-style: none;
+			text-align: center;
+			li {
+				display: inline-block;
+				@include self-margin-right(8px);
+				a {
+					color: darken($lightblue, 30%);
+					font-size: $m;
+				}
+			}
+		}
+	}
+	section#main-content {
+		padding-top: 2em;
+		article {
+			background: darken($pale, 3%);
+			@include self-margin-bottom(1em);
+		}
+		article.feature-article, article.home-article {
+			h3.article-title {
+				text-align: center;
+				line-height: 2;
+				a {
+					color:$greenblue;
+					font-weight: 700;
+				}
+			}
+			.article-meta {
+				width: 23%;
+				padding: 1em 1%;
+				h4 {
+					font-size: $s;
+					font-weight: 400;
+					color:$blue;
+				}
+			}
+			p {
+				width: 73%;
+				padding: 1em 1%;
+				font-size: 0.9*$s;
+				line-height: 1.5;
+				font-weight: 300;
+				color:darken($pale, 50%);
+				a {
+					font-family: $DroidSerif;				
+				}
+			}
+		}
+	}
+	aside#main-side-bar {
+		margin-top: 1em;
+		section.widget {
+			background: darken($pale, 3%);
+			@include self-margin-bottom(1em);
+			h3.widget-title {
+				text-align: center;
+				font-weight: 700;
+				line-height: 2;
+				color:$greenblue;
+			}
+			.widget-body {
+				padding: 1em;
+				ul {
+					li {
+						@include self-margin-bottom(5px);
+					}
+				}
+			}
+		}
+	}
+	footer {
+		background: $blue;
+		margin: 1em 0;
+		h2#copy-right {
+			font-size: $l;
+			text-align: center;
+			line-height: 2;
+			color:lighten($blue, 40%);
+			font-weight: 300;
+		}
+	}
+}
+
+//layout 
+
+body {
+	@include container;
+	header {
+		@include span-columns(4 omega,4);
+	}
+	nav {
+		@include span-columns(4 omega,4);
+		@include omega;
+	}
+	section#main-content {
+		@include span-columns(4 omega,4);
+		article {
+			h3.article-title {
+				@include span-columns(4 omega,4);
+			}
+			@include container;
+			.article-meta {
+				@include span-columns(1, 4);
+			}
+			p {
+				@include span-columns(3 omega, 4);
+			}
+		}
+	}
+	aside#main-side-bar {
+		@include span-columns(4 omega, 4);
+	}
+	footer {
+		@include span-columns(4 omega, 4);
+	}
+}
+
+@include at-breakpoint($tablet) {
+	body {
+		@include container;
+		header {
+			@include span-columns(8 omega, 8);
+		}
+		nav {
+			@include span-columns(8 omega, 8);
+		}
+		section#main-content {
+			@include pre(0.5);
+			@include span-columns(4.5, 8);
+			padding-top: 1em;
+			article {
+				h3.article-title {
+					@include span-columns(8, 8);
+				}
+				@include container;
+				.article-meta {
+					@include span-columns(8, 8);
+					width: 100%!important;
+					padding:0 3%!important;
+					@include pie-clearfix;
+					h4 {
+						float:left;
+						@include self-margin-right(10px);
+					}
+				}
+				p {
+					@include span-columns(8,8);
+					width: 94%!important;
+					padding: 3%!important;
+				}
+			}
+			
+		}
+		aside#main-side-bar {
+			@include pre(0.5);
+			@include span-columns(2, 8);
+			@include post(0.5);
+		}
+		footer {
+			@include span-columns(8 omega, 8);
+		}
+	}
+}

@@ -1,0 +1,40 @@
+body {
+	background: $pale;
+	font-size: 16px;
+	font-family: $DroidSerif;
+	a {
+		font-family: $Oswald;
+		color: $greenblue;
+		text-decoration: none;
+		font-weight: 300;
+		&:hover {
+			color: $blue;
+			text-decoration: underline;
+		}
+	}
+
+	#{headings(all)} {
+		font-weight: 700;
+		font-family: $Oswald;
+	}
+	h1 {
+		font-size: $xxl;
+	}
+
+	h2 {
+		font-size: $xl;
+	}
+
+	h3 {
+		font-size: $l;
+	}
+
+	h4, h5, h6 {
+		font-size: $m;
+	}
+
+	p {
+		font-size: $s;
+		padding: $s;
+	}
+}

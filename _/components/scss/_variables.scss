@@ -1,0 +1,31 @@
+//font
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Oswald:400,300);
+
+$Oswald: 'Oswald', sans-serif;
+$DroidSerif: 'Droid Serif', serif;
+
+//colors
+
+$white: #F4EEE2;
+$pale: #CFDCD3;
+$lightblue: #8CB9B2;
+$greenblue: #27777E;
+$blue: #1B5771;
+
+//font-size
+$s: 1em;
+$m: 1.33em;
+$l: 1.78em;
+$xl: 2.37em;
+$xxl: 3.16em;
+
+//susy
+
+$total-columns: 4;
+$column-width: 120px;
+$gutter-width: 0px;
+$grid-padding: 0px;
+
+$tablet: 480px 8 959px;
+$computer: 960px 12;

@@ -1,0 +1,19 @@
+@mixin self-margin-right($length) {
+	& {
+		margin-right: $length;
+	}
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+@mixin self-margin-bottom($length) {
+	& {
+		margin-bottom: $length;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
