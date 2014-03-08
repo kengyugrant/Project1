@@ -180,3 +180,35 @@ body {
 		}
 	}
 }
+
+@include at-breakpoint($computer) {
+	body {
+		@include container;
+		header {
+			@include span-columns(12 omega,12);
+			h1#site-title {
+				text-align: left;
+				padding-left: 1em;
+			}
+			h2#site-sub-title {
+				text-align: right;
+				padding-right: 1em;
+			}
+		}
+		nav {
+			@include span-columns(12 omega,12);
+		}
+		section#main-content {
+			margin-top: 2em;
+			padding-top:0;
+			@include span-columns(9, 12);
+		}
+		aside#main-side-bar {
+			margin-top: 2em;
+			@include span-columns(3, 12);
+		}
+		footer {
+			@include span-columns(12 omega,12);
+		}
+	}
+}

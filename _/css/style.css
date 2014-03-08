@@ -380,3 +380,52 @@ body {
       width: 100%;
       float: right;
       margin-right: 0; } }
+@media (min-width: 960px) {
+  /* line 185, ../components/scss/_layout.scss */
+  body {
+    max-width: 1440px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 38, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+    body:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 187, ../components/scss/_layout.scss */
+    body header {
+      width: 100%;
+      float: right;
+      margin-right: 0; }
+      /* line 189, ../components/scss/_layout.scss */
+      body header h1#site-title {
+        text-align: left;
+        padding-left: 1em; }
+      /* line 193, ../components/scss/_layout.scss */
+      body header h2#site-sub-title {
+        text-align: right;
+        padding-right: 1em; }
+    /* line 198, ../components/scss/_layout.scss */
+    body nav {
+      width: 100%;
+      float: right;
+      margin-right: 0; }
+    /* line 201, ../components/scss/_layout.scss */
+    body section#main-content {
+      margin-top: 2em;
+      padding-top: 0;
+      width: 75%;
+      float: left;
+      margin-right: 0%; }
+    /* line 206, ../components/scss/_layout.scss */
+    body aside#main-side-bar {
+      margin-top: 2em;
+      width: 25%;
+      float: left;
+      margin-right: 0%; }
+    /* line 210, ../components/scss/_layout.scss */
+    body footer {
+      width: 100%;
+      float: right;
+      margin-right: 0; } }
