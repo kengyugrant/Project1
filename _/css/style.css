@@ -380,7 +380,7 @@ body {
       width: 100%;
       float: right;
       margin-right: 0; } }
-@media (min-width: 960px) {
+@media (min-width: 960px) and (max-width: 3000px) {
   /* line 185, ../components/scss/_layout.scss */
   body {
     max-width: 1440px;
@@ -411,20 +411,60 @@ body {
       width: 100%;
       float: right;
       margin-right: 0; }
-    /* line 201, ../components/scss/_layout.scss */
+      /* line 200, ../components/scss/_layout.scss */
+      body nav ul {
+        text-align: left !important; }
+        /* line 202, ../components/scss/_layout.scss */
+        body nav ul li:first-of-type {
+          margin-left: 1em; }
+    /* line 207, ../components/scss/_layout.scss */
     body section#main-content {
       margin-top: 2em;
       padding-top: 0;
       width: 75%;
       float: left;
-      margin-right: 0%; }
-    /* line 206, ../components/scss/_layout.scss */
+      margin-right: 0%;
+      max-width: 1440px;
+      max-width: 1440px;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: auto;
+      margin-right: auto; }
+      /* line 38, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+      body section#main-content:after {
+        content: "";
+        display: table;
+        clear: both; }
+      /* line 213, ../components/scss/_layout.scss */
+      body section#main-content article {
+        width: 91.66667%;
+        float: left;
+        margin-right: 0%;
+        max-width: 1440px;
+        padding: 0;
+        padding-left: 1em; }
+        /* line 218, ../components/scss/_layout.scss */
+        body section#main-content article h3.article-title {
+          text-align: left !important; }
+        /* line 222, ../components/scss/_layout.scss */
+        body section#main-content article .article-meta {
+          padding: 0 !important;
+          width: 25%;
+          float: left;
+          margin-right: 0%; }
+        /* line 226, ../components/scss/_layout.scss */
+        body section#main-content article p {
+          padding-left: 0 !important;
+          width: 75%;
+          float: right;
+          margin-right: 0; }
+    /* line 232, ../components/scss/_layout.scss */
     body aside#main-side-bar {
       margin-top: 2em;
       width: 25%;
-      float: left;
-      margin-right: 0%; }
-    /* line 210, ../components/scss/_layout.scss */
+      float: right;
+      margin-right: 0; }
+    /* line 237, ../components/scss/_layout.scss */
     body footer {
       width: 100%;
       float: right;

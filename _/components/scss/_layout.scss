@@ -197,15 +197,42 @@ body {
 		}
 		nav {
 			@include span-columns(12 omega,12);
+			ul {
+				text-align: left!important;
+				li:first-of-type {
+					margin-left:1em;
+				}
+			}
 		}
 		section#main-content {
 			margin-top: 2em;
 			padding-top:0;
 			@include span-columns(9, 12);
+			max-width: 12*120px;
+			@include container;
+			article {
+				@include span-columns(11,12);
+				max-width: 12*120px;
+				padding: 0;
+				padding-left: 1em;
+				h3.article-title {
+					text-align: left!important;
+				}
+				
+				.article-meta {
+					padding: 0!important;
+					@include span-columns(3,12);
+				}
+				p {
+					padding-left: 0!important;
+					@include span-columns(9 omega,12);
+				}
+			}
 		}
 		aside#main-side-bar {
 			margin-top: 2em;
-			@include span-columns(3, 12);
+			@include span-columns(3 omega, 12);
+
 		}
 		footer {
 			@include span-columns(12 omega,12);
